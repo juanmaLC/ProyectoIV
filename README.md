@@ -28,4 +28,4 @@ a todos los clientes y que cada uno pueda reservar con antelación y comodidad a
 Uso de esta clase para comprobar correcta inicializacion
 
 # Enlace a la documentacion
-[Explicacion](https://github.com/juanmaLC/ProyectoIV/docs/testIntegracion.md) 
+[Explicacion](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/testIntegracion.md) 
