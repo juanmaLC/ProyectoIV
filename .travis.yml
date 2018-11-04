@@ -1,3 +1,10 @@
 language: ruby
-rvm: 2.2
-script: bundle exec rake spec
+rvm:
+	- 2.3.1
+
+before_install:
+	- gem install bundle
+	- bundle install
+ 
+script:
+	- rake
