@@ -4,8 +4,6 @@ rvm:
  - 2.3.1
  
 before_install:
-- gem install bundle
-- bundle install
-- bundle update --all
+- gem install bundler -v 1.17.1
 
 script: rake 
