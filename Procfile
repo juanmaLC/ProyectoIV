@@ -1,1 +1,1 @@
-web: bundle rackup
+web: rackup
