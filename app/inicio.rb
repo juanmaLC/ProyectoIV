@@ -3,6 +3,6 @@ require 'sinatra'
 
 
 get '/' do
-	'Hola'
+	'Hola funciona?'
 end
 
