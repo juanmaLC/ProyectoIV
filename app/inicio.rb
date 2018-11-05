@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'sinatra'
-
+require 'json'
 
 get '/' do
-	'Hola funciona?'
+	content_type :json
+	{:status => 'ok'}.to_json
 end
 
