@@ -10,7 +10,7 @@ a todos los clientes y que cada uno pueda reservar con antelación y comodidad a
 
 # Herramientas utilizadas para el desarrollo
 - El lenguaje para desarrolar el servicio web será Ruby
-- El framework utilizado será Ruby on Rails
+- El framework utilizado será Sinatra
 - Los test elegidos para evaluar el código desarollado serán RSpec
 - La base de datos para guardar la información necesaria será MySQL
 
