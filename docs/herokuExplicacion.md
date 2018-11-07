@@ -1,8 +1,4 @@
 
-#Explicación del despliegue en Heroku
-
-
-
 #Instalación: 
 
 Para instalar en nuestra maquina usamos :
