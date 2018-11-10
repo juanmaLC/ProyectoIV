@@ -1,6 +1,6 @@
 
-#Instalación: 
 
+#Instalación: 
 Para instalar en nuestra maquina usamos :
 	
 	sudo snap install heroku --clasic 
@@ -21,7 +21,6 @@ Yo la cree por la web ya que es muy sencillo. Una vez creada nos vamos al aparta
 
 
 #Comprobar funcionamiento
-
 En local con:
 	
 	heroku local
