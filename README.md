@@ -38,6 +38,8 @@ Despliegue: [proyectoIV](https://proyectoiv1819.herokuapp.com/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://proyectoiv1819.herokuapp.com/)
 
+
+Con /informacion el microservicio mostrara informacion sobre el microservicio
 Me he decantado por heroku ya que es gratuito , hay mucha información de como usarlo y es bastante sencillo de usar.
 Más documentación sobre mi despliegue en heroku [aqui](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/herokuExplicacion.md) 
 
