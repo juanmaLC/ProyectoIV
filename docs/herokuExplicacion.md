@@ -23,6 +23,18 @@ A continucación añado una captura de pantalla de dicha configuración sobre mi
 
 Con esta configuración cada vez que hagamos un nuevo push a nuestro repositorio y pase los test que tenemos asignados , se realizará el deploy.
 
+# Procfile
+El archivo procfile debe de estar en el directorio raíz del proyecto y es el encargado de decirle a heroku que comando tiene que ejecutar para arrancar el microservicio.Yo he utilizado el siguiente
+
+	web: bundle exec rackup -p $PORT
+	
+$PORT es una variable global que nos indicara el puerto del microservicio
+
+# Config.ru
+Este archivo indica a heroku el directorio y el archivo que quiere que ejecute 
+	
+	require './app/inicio'
+	run Sinatra::Application
 
 # Comprobar funcionamiento
 En local con:
