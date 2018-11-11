@@ -18,6 +18,10 @@ Una vez editado el Gemfile con las dependencias que necesitamos:
 # Despliegue 	
 Podemos crear la app de heroku desde la terminal o desde la web. 
 Yo la cree por la web ya que es muy sencillo. Una vez creada nos vamos al apartado deploy , y seleccionamos el metodo de github , lo conectamos con el repositorio que queramos y activamos el "Automatic deploys". Tambien si tenemos integración continua podemos hacer que solo se haga el deploy si los test se pasaron correctamente.
+A continucación añado una captura de pantalla de dicha configuración sobre mi proyecto:
+![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/configuracionHeroku.png) 
+
+Con esta configuración cada vez que hagamos un nuevo push a nuestro repositorio y pase los test que tenemos asignados , se realizará el deploy.
 
 
 # Comprobar funcionamiento
