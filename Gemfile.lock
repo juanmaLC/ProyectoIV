@@ -30,7 +30,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rspec
+  rspec (~> 3.0)
   sinatra
 
 BUNDLED WITH
