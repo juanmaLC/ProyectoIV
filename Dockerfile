@@ -9,5 +9,5 @@ RUN bundle install
 
 COPY . .
 
-CMD ["bundle", "rackup", "config.ru"]
+CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", "5000"]
 
