@@ -11,5 +11,4 @@ COPY . .
 
 #RUN useradd -m juanma
 #USER juanma
-CMD ["bundle", "exec", "rackup"]
-
+CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", $PORT]
