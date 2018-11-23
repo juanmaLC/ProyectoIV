@@ -9,7 +9,7 @@ RUN bundle install
 
 COPY . .
 
-RUN useradd -m juanma
-USER juanma
+#RUN useradd -m juanma
+#USER juanma
 CMD ["bundle", "exec", "rackup"]
 
