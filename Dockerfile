@@ -1,14 +1,12 @@
-FROM ruby:latest
+FROM ruby:2.5
 
 # throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
 
 
 COPY Gemfile Gemfile.lock ./
+COPY . .
 RUN bundle install
 
-COPY . .
 
-#RUN useradd -m juanma
-#USER juanma
-CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", $PORT]
+CMD ["ruby","app/inicio.rb"]

@@ -4,7 +4,8 @@ require 'json'
 require './lib/test1' 
 
 
-
+set :port, ENV['PORT']
+set :bind, '0.0.0.0'
 
 
 
