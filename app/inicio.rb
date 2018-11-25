@@ -1,6 +1,13 @@
 require 'rubygems'
 require 'sinatra'
 require 'json'
+require './lib/test1' 
+
+
+
+
+
+
 
 get '/' do
 	content_type :json
@@ -16,4 +23,15 @@ get '/informacion' do
 	  :version => 'hito 3 del proyecto' }.to_json
 
 end 
+
+
+
+
+get "/clases" do
+
+
+	
+
+
+end
 

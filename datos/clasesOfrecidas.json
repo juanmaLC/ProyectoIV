@@ -1,0 +1,32 @@
+[
+
+	{
+		"modalidad":"crossfit",
+		"profesor" :"Juan",
+		"disponible":"Disponible"
+
+
+	},
+
+	{
+		"modalidad":"bodypump",
+		"profesor" :"Alfonso",
+		"disponible":"Disponible"
+
+
+	},
+
+	{
+		"modalidad":"karate",
+		"profesor" :"Marta",
+		"disponible":"No disponible"
+
+
+	}
+
+
+
+
+
+
+]
