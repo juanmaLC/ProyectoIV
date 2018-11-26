@@ -44,4 +44,10 @@ Con /informacion el microservicio mostrara informacion sobre el microservicio.
 Me he decantado por heroku ya que es gratuito , hay mucha información de como usarlo y es bastante sencillo de usar.
 Más documentación sobre mi despliegue en heroku [aqui](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/herokuExplicacion.md) 
 
+# Docker en Heroku
 
+Contenedor : https://proyectoiv1819docker.herokuapp.com/
+
+[Repositorio DockerHub](https://hub.docker.com/r/juanmalc/proyectoiv/)
+
+[Documentación extendida sobre el desarrollo en Docker](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/docker.md)  
