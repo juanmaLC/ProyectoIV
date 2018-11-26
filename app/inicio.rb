@@ -36,3 +36,9 @@ get "/clases" do
 
 end
 
+
+get "/status" do
+	content_type :json
+	{:status => 'ok'}.to_json
+end
+
