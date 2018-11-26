@@ -4,12 +4,12 @@
 - Vamos al directorio del proyecto y creamos un dockerfile para el docker en local:
 
 
-	FROM ruby:2.5
-	RUN bundle config --global frozen 1
-	COPY Gemfile Gemfile.lock ./
-	COPY . .
-	RUN bundle install
-	CMD ["bundle","exec","rackup","--host","0.0.0.0","-p","80"]
+		FROM ruby:2.5
+		RUN bundle config --global frozen 1
+		COPY Gemfile Gemfile.lock ./
+		COPY . .
+		RUN bundle install
+		CMD ["bundle","exec","rackup","--host","0.0.0.0","-p","80"]
 	
 	
 - Contruimos la imagen con dicho dockerfile y la ejecutamos:
@@ -28,12 +28,12 @@
 
 - Hacemos un push al repositorio git con el Dockerfile configurado para heroku
 
-	FROM ruby:2.5
-	RUN bundle config --global frozen 1
-	COPY Gemfile Gemfile.lock ./
-	COPY . .
-	RUN bundle install
-	CMD ["ruby","app/inicio.rb"]
+		FROM ruby:2.5
+		RUN bundle config --global frozen 1
+		COPY Gemfile Gemfile.lock ./
+		COPY . .
+		RUN bundle install
+		CMD ["ruby","app/inicio.rb"]
 	
 	
 - Con esto se creará la nueva imagen en nuestro repositorio DockerHub. La podemos bajar con la orden:
@@ -60,5 +60,6 @@
 ![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/container.png) 
 
 
-**Todos los pasos seguidos los encontre en la documentación de Heroku **
-[Documentación](https://devcenter.heroku.com/articles/container-registry-and-runtime) 
+- Todos los pasos seguidos los encontre en la documentación de Heroku 
+
+[Documentación Oficial](https://devcenter.heroku.com/articles/container-registry-and-runtime) 
