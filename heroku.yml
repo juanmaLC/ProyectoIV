@@ -1,5 +1,6 @@
+
 build:
-  languages:
-    - ruby
-run:
-  web: bundle exec rackup -p $PORT
+	docker:
+		web: Dockerfile
+	run:
+		web: bundle exec rackup -p $PORT
