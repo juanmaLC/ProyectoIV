@@ -9,4 +9,6 @@ COPY . .
 RUN bundle install
 
 
-CMD ["ruby","app/inicio.rb"]
+CMD ["bundle","exec","rackup"]
+
+
