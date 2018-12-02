@@ -10,6 +10,6 @@ RUN bundle install
 
 
 
-CMD ["bundle","exec","rackup","-p","80"]
+CMD ["bundle","exec","rackup"]
 
 
