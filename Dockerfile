@@ -4,8 +4,19 @@ FROM ruby:2.5
 RUN bundle config --global frozen 1
 
 
-COPY Gemfile Gemfile.lock ./
-COPY . .
+COPY Gemfile .
+COPY Gemfile.lock .
+
+COPY app/ .
+COPY app/inicio.rb app/inicio.rb
+
+COPY datos/ .
+COPY datos/clasesOfrecidas.json datos/clasesOfrecidas.json  
+
+COPY lib/ .
+COPY lib/test1.rb lib/test1.rb
+COPY config.ru .
+
 RUN bundle install
 
 
