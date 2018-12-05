@@ -14,7 +14,7 @@ COPY datos/ .
 COPY datos/clasesOfrecidas.json datos/clasesOfrecidas.json  
 
 COPY lib/ .
-COPY lib/test1.rb lib/test1.rb
+COPY lib/ClasesGym.rb lib/ClasesGym.rb
 COPY config.ru .
 
 RUN bundle install
