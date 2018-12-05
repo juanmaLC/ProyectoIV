@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'json'
-require './lib/test1' 
+require './lib/ClasesGym' 
 
 
 set :port, ENV['PORT']

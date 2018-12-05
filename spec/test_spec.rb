@@ -1,4 +1,4 @@
-require './lib/test1'  
+require './lib/ClasesGym'  
 
 require 'json'
 
