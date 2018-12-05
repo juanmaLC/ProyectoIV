@@ -3,6 +3,7 @@ require './lib/test1'
 require 'json'
 
 
+
 clases= Array.new
 file = File.read('datos/clasesOfrecidas.json')
 datos=JSON.parse(file)
@@ -11,7 +12,8 @@ datos.each{
 
 	|clase| 
 
-	clases[contador]=Clases.new(clase["modalidad"],clase["profesor"],clase["disponible"])
+	clases[contador]=ClasesGym.new(clase["modalidad"],clase["profesor"],clase["disponible"],
+clase["espacios_libres"],clase["clase"],clase["duracion"])
 	contador=contador+1
 
 }
@@ -20,14 +22,13 @@ datos.each{
 
 
 
-describe 'test1 : ' do
+describe 'Inicializacion de clase correcta : ' do
 	
 	it 'nombres correctos' do
-		
 		clases.each{
+		
 
-			|clase| clase.mostrarProfesor() != nil
-
+			|clase| expect(clase.getProfesor()).not_to be_empty
 		}
 	end
 
@@ -36,18 +37,45 @@ describe 'test1 : ' do
 	it 'modalidades correctas' do
     		clases.each{
 
-			|clase| clase.mostrarModalidad() != nil
+			|clase| expect(clase.getModalidad()).not_to be_empty
 
 		}
 	end
 
 
-	it 'clases disponibles ' do
+	it 'clases disponibles correctas ' do
 		clases.each{
 
-			|clase| clase.mostrarDisponibilidad() != nil
+			|clase| expect(clase.getDisponibilidad()).not_to be_empty
 
 		}
 	end
+
+	it 'espacios libres correctos' do
+		clases.each{
+			
+			|clase| expect(clase.getEspaciosLibres()).to be >= 0
+		}
+
+	end
+
+
+	it 'clases correctas' do
+		clases.each{
+			
+			|clase| expect(clase.getClase()).not_to be_empty
+		}
+
+	end
+
+	it 'duracion correcta' do
+		clases.each{
+			
+			|clase| expect(clase.getDuracion()).not_to be_empty
+		}
+
+	end
+
+
 
 end

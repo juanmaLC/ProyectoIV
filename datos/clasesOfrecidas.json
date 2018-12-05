@@ -3,7 +3,10 @@
 	{
 		"modalidad":"crossfit",
 		"profesor" :"Juan",
-		"disponible":"Disponible"
+		"disponible":"Disponible",
+		"espacios_libres":10,
+		"clase":"clase 2.2",
+		"duracion":"1h"
 
 
 	},
@@ -11,7 +14,10 @@
 	{
 		"modalidad":"bodypump",
 		"profesor" :"Alfonso",
-		"disponible":"Disponible"
+		"disponible":"Disponible",
+		"espacios_libres":20,
+		"clase":"clase 0.7",
+		"duracion":"45 min"
 
 
 	},
@@ -19,7 +25,10 @@
 	{
 		"modalidad":"karate",
 		"profesor" :"Marta",
-		"disponible":"No disponible"
+		"disponible":"No disponible",
+		"espacios_libres":0,
+		"clase":"clase 1.0",
+		"duracion":"30 min"
 
 
 	}
