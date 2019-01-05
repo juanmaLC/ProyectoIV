@@ -1,0 +1,36 @@
+---
+  - hosts: all
+    sudo: yes
+   
+
+    tasks:
+
+      - name: Actualizar paquetes
+        apt:
+         update_cache: yes
+
+      - name: Ruby
+        apt: pkg=ruby state=latest
+
+      
+
+
+      - name: Clonar el repositorio
+        become: yes
+        git: repo=https://github.com/juanmaLC/ProyectoIV.git dest=ProyectoIV/ clone=yes force=yes
+
+      
+
+      - gem: 
+         name: sinatra
+         state: latest
+
+      - gem: 
+         name: bundler
+         state: latest
+      
+
+      - gem: 
+         name: rspec
+         state: latest
+
