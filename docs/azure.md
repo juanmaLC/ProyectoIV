@@ -1,6 +1,7 @@
 # Despliegue de la máquina en Azure con Vagrant
 
 Para crear la máquina virtual en Azure he utilizado la herramienta Vagrant. 
+
 Con:
 	
 	vagrant init 
@@ -76,7 +77,9 @@ Se crea el fichero vagrantfile el cual yo configuré de la siguiente manera:
 
 
 [Documentacion cli vagrant](https://www.vagrantup.com/docs/cli/) 
+
 [Ansible con Vagrant](https://www.vagrantup.com/docs/provisioning/ansible.html) 	
+
 [Configuracion para desplegar maquina azure con vagrant](https://blog.scottlowe.org/2017/12/11/using-vagrant-with-azure/) 
 	
 Al ejecutar:
@@ -135,9 +138,13 @@ Lo ejecutamos con:
 	vagrant provision
 	
 Para su configuración me he basado en :
+
 [Ansible+Vagrant](https://www.vagrantup.com/docs/provisioning/ansible.html) 
+
 [Using Vagrant and Ansible](https://docs.ansible.com/ansible/latest/scenario_guides/guide_vagrant.html)
+
 [Ansible Doc](https://docs.ansible.com/ansible/latest/) 
+
 [Instalación de las gemas](https://docs.ansible.com/ansible/latest/modules/gem_module.html) 
 
 
@@ -200,9 +207,13 @@ He definido 5 funciones que me han parecido utiles:
 
 
 Para llegar a esta configuración me he basado en:
+
 [Tutorial fabric](http://docs.fabfile.org/en/1.14/tutorial.html#making-connections)
+
 [Variables de entorno fabric (env)](http://docs.fabfile.org/en/1.14/usage/env.html)
+
 [Ruby-Dev](https://stackoverflow.com/questions/13767725/unable-to-install-gem-failed-to-build-gem-native-extension-cannot-load-such)
+
 [Ejecucion de las funciones creadas](http://docs.fabfile.org/en/1.14/usage/execution.html)
 
 

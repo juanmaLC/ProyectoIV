@@ -12,7 +12,7 @@ a todos los clientes y que cada uno pueda reservar con antelación y comodidad a
 - El lenguaje para desarrolar el servicio web será Ruby
 - El framework utilizado será Sinatra
 - Los test elegidos para evaluar el código desarollado serán RSpec
-- La base de datos para guardar la información necesaria será MySQL
+- La base de datos para guardar la información necesaria será mongoDB
 
 
 # Ejecución de test 
@@ -42,6 +42,9 @@ Despliegue: [proyectoIV](https://proyectoiv1819.herokuapp.com/)
 - Con /informacion el microservicio mostrara informacion sobre el microservicio.
 - Con /clases el microservicio mostrará las clases ofertadas.
 - Con /InformacionClase1 , /InformacionClase2 , /InformacionClase3 , se mostrara información extendida la clase en cuestión.
+- Con /crearActividad se crea una nueva clase ofertada por el gimnasio con los valores recibidos.
+- Con /eliminarActividad se elimina la clase ofertada correspondiente.
+- Con /actualizarActividad se actualiza la modalidad de la clase de gimnasio ofertada en cuestión.
 
 Me he decantado por heroku ya que es gratuito , hay mucha información de como usarlo y es bastante sencillo de usar.
 Más documentación sobre mi despliegue en heroku [aqui](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/herokuExplicacion.md) 
@@ -53,3 +56,10 @@ Más documentación sobre mi despliegue en heroku [aqui](https://github.com/juan
 [Repositorio DockerHub](https://hub.docker.com/r/juanmalc/proyectoiv/)
 
 [Documentación extendida sobre el desarrollo en Docker](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/docker.md)  
+
+# Despliegue en Azure
+
+Despliegue final: 51.144.180.59
+
+
+Para mas información sobre el despliegue dirijase [aquí](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/azure.md) 
