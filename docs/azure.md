@@ -202,7 +202,7 @@ He definido 5 funciones que me han parecido utiles:
 - BorrarCodigo(): Borra la carpeta clonada de mi repositorio
 - ClonarCodigo(): Clona el repositorio indicado en la máquina
 - InstalarMongoDB(): instala la base de datos que utiliza el microservicio y la arranca
-- InstalarMicroservicio(): Llama a BorrarCodigo() ,ClonarCodigo(), InstalarMongoDB() e instala dependencias(make,gcc,ruby-dev,bundler) para que se puedan instalar todas las gemas necesarias con bundle install.
+- InstalarMicroservicio(): Llama a BorrarCodigo() ,ClonarCodigo(), InstalarMongoDB() e instala dependencias(make,gcc,ruby-dev,bundler) para que se puedan instalar todas las gemas necesarias con bundle install. ruby-dev es necesario para gemas nativas.
 - IniciarMicroservicio(): Cambia al directorio del proyecto y ejecuta el microservicio en el puerto 80 y en el host 0.0.0.0.
 
 
@@ -216,5 +216,6 @@ Para llegar a esta configuración me he basado en:
 
 [Ejecucion de las funciones creadas](http://docs.fabfile.org/en/1.14/usage/execution.html)
 
+[Instalacion de ruby-dev](https://stackoverflow.com/questions/44901379/gemextbuilderror-error-failed-to-build-gem-native-extension-for-rails-vers)
 
 
