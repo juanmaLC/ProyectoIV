@@ -1,26 +1,44 @@
 ---
   - hosts: all
-    sudo: yes
-   
+    
 
     tasks:
 
       - name: Actualizar paquetes
         apt:
          update_cache: yes
+        become: true
 
       - name: Ruby
         apt: pkg=ruby state=latest
+        become: true
 
       
+      - name: gcc
+        apt: pkg=gcc state=latest
+        become: true
 
+      - name: make
+        apt: pkg=make state=latest
+        become: true
+      
+      - name: ruby-dev
+        apt: pkg=ruby-dev state=latest
+        become: true
+
+      - name: mongodb
+        apt: pkg=mongodb state=latest
+        become: true
+
+      - name: Bundler
+        apt: pkg=bundler state=latest
+        become: true
 
       - name: Clonar el repositorio
-        become: yes
-        git: repo=https://github.com/juanmaLC/ProyectoIV.git dest=ProyectoIV/ clone=yes force=yes
+        git: repo=https://github.com/juanmaLC/ProyectoIV.git dest=ProyectoIV/  
 
       
-
+    
       - gem: 
          name: sinatra
          state: latest
