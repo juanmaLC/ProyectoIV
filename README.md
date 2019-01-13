@@ -40,11 +40,8 @@ Despliegue: [proyectoIV](https://proyectoiv1819.herokuapp.com/)
 
 
 - Con /informacion el microservicio mostrara informacion sobre el microservicio.
-- Con /clases el microservicio mostrará las clases ofertadas.
 - Con /InformacionClase1 , /InformacionClase2 , /InformacionClase3 , se mostrara información extendida la clase en cuestión.
-- Con /crearActividad se crea una nueva clase ofertada por el gimnasio con los valores recibidos.
-- Con /eliminarActividad se elimina la clase ofertada correspondiente.
-- Con /actualizarActividad se actualiza la modalidad de la clase de gimnasio ofertada en cuestión.
+
 
 Me he decantado por heroku ya que es gratuito , hay mucha información de como usarlo y es bastante sencillo de usar.
 Más documentación sobre mi despliegue en heroku [aqui](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/herokuExplicacion.md) 
@@ -63,3 +60,16 @@ Despliegue final: 104.214.232.36
 
 
 Para mas información sobre el despliegue dirijase [aquí](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/azure.md) 
+
+
+# Explicación del proyecto
+
+El microservicio ha sido pensado para mejorar el funcionamiento de un gimnasio en el que se puede :
+
+- Crear nuevas clases ofertadas por el gimnasio.
+- Modificar las clases ofertadas por el gimnasio
+- Ver todas las clases ofertadas por el gimnasio
+- Ver la información de una clase específica.
+- Eliminar una clase ofertada
+
+Todo esto se realiza mediante archivos json y con el uso de la base de datos implementada en MongoDB.
