@@ -25,7 +25,7 @@ def IniciarMicroservicio():
 	run ("cd ProyectoIV/ && sudo bundle exec rackup -p 80 --host 0.0.0.0")
 
 def DetenerMicroservicio():
-	#run("")
+	run("")
 
 def ReiniciarMicroservicio():
 	DetenerMicroservicio()
