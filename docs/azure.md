@@ -19,7 +19,7 @@ Se crea el fichero vagrantfile el cual yo configuré de la siguiente manera:
 			config.vm.provider :azure do |azure, override|
 
 				#Valores personales de azure
-				azure.tenant_id = ENV['AZURE_TENANT_ID']
+					azure.tenant_id = ENV['AZURE_TENANT_ID']
     				azure.client_id = ENV['AZURE_CLIENT_ID']
     				azure.client_secret = ENV['AZURE_CLIENT_SECRET']
     				azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
@@ -28,11 +28,11 @@ Se crea el fichero vagrantfile el cual yo configuré de la siguiente manera:
 
 				# Parametros de la maquina virtual , nombre , tamaño solicitado, imagen usada , grupo de recursos , abrir puerto 80 y localizacion
     				azure.vm_name = 'proyectoivgym'
-   				azure.vm_size = 'Standard_A0'
+   					azure.vm_size = 'Standard_A0'
     				azure.vm_image_urn = 'Canonical:UbuntuServer:16.04-LTS:latest'
     				azure.resource_group_name = 'ProyectoIVVagrant'
-				azure.tcp_endpoints = 80
-				azure.location = "westeurope"
+					azure.tcp_endpoints = 80
+					azure.location = "westeurope"
 		
 			end
 
@@ -145,7 +145,7 @@ El archivo de configuración que he utilizado es el siguiente:
 
       - gem: 
          name: rspec
-	state: latest
+	     state: latest
 	
 
 **Configuración del archivo playbook.yml**
