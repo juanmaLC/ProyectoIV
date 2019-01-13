@@ -52,7 +52,7 @@ Una vez que tenemos configurado el Vagrantfile iniciamos el proceso de creación
 	
 Caprura de pantalla para mostrar que se ha utilizado Vagrant:
 
-![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/vagrant.png) 
+![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/vagrantF.png) 
 
 
 	
@@ -180,11 +180,11 @@ Lo ejecutamos con:
 
 	vagrant provision
 	
-Captura de pantalla del porceso realizado con ansible:
+Captura de pantalla del proceso realizado con ansible:
 
-![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/ansible.png) 
+![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/ansibleF1.png) 
 
-![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/ansible2.png) 
+![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/ansibleF2.png) 
 
 	
 Para su configuración me he basado en :
@@ -239,7 +239,7 @@ Mi archivo de configuracion del despliegue es :
 		run ("cd ProyectoIV/ && sudo bundle exec rackup -p 80 --host 0.0.0.0")
 
 	def DetenerMicroservicio():
-		#run("")
+		run("")
 
 	def ReiniciarMicroservicio():
 		DetenerMicroservicio()
@@ -266,6 +266,11 @@ La ejecución de estas funciones de despliegue es muy sencilla , por ejemplo, co
 - f : indicamos donde está nuestro fichero fabfile.py con las funciones definidas
 - H : indicamos el usuario y host al que nos vamos a conectar
 - Finalmente indicamos el nombre de la función que queremos ejecutar en la máquina a la que nos vamos a conectar.
+
+
+Captura de pantalla de iniciar el servicio con fabric:
+![](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/imagenes/fab.png) 
+
 
 Para llegar a esta configuración me he basado en:
 
