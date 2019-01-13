@@ -56,7 +56,7 @@ Más documentación sobre mi despliegue en heroku [aqui](https://github.com/juan
 
 # Despliegue en Azure
 
-Despliegue final: 104.214.232.36
+Despliegue final: 40.68.203.144
 
 
 Para mas información sobre el despliegue dirijase [aquí](https://github.com/juanmaLC/ProyectoIV/blob/master/docs/azure.md) 
